@@ -1,0 +1,1032 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(to bottom,#f4f7fb,#eaf2ff);
+    color:#222;
+    line-height:1.6;
+    overflow-x:hidden;
+}
+
+/* HEADER */
+
+header {
+    background:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    url('https://images.unsplash.com/photo-1438232992991-995b7058bbb3?q=80&w=1400&auto=format&fit=crop');
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+
+    animation: fadeIn 1.5s ease;
+}
+
+header h1 {
+    font-size: 4rem;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 1.4rem;
+    opacity: 0.95;
+}
+/* LOGO */
+
+.logo {
+    width: 180px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* NAVIGATION */
+
+nav {
+    background: rgba(30,41,59,0.9);
+backdrop-filter: blur(8px);
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+/* SECTION */
+
+section {
+    padding: 40px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #1e293b;
+}
+
+section p {
+    margin-bottom: 15px;
+}
+
+/* CARDS */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:linear-gradient(to bottom right,#ffffff,#dbeafe);
+
+    border-radius:25px;
+
+    padding:30px 25px;
+
+    flex:1 1 280px;
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,0.08),
+    0 3px 10px rgba(37,99,235,0.08);
+
+    transition:all 0.4s ease;
+
+    border-top:6px solid #2563eb;
+
+    min-height:320px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+/* GLOW EFFECT */
+
+.card::before{
+    content:"";
+
+    position:absolute;
+
+    top:-50px;
+    right:-50px;
+
+    width:140px;
+    height:140px;
+
+    background:rgba(255,255,255,0.35);
+
+    border-radius:50%;
+}
+
+/* HOVER EFFECT */
+
+.card:hover{
+    transform:translateY(-10px) scale(1.02);
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,0.12),
+    0 5px 15px rgba(37,99,235,0.15);
+}
+
+/* TITLES */
+
+.card h3{
+    font-size:1.5rem;
+
+    margin-bottom:15px;
+
+    color:#0f172a;
+
+    font-weight:700;
+}
+
+/* TEXT */
+
+.card p{
+    color:#475569;
+
+    line-height:1.8;
+
+    font-size:1rem;
+
+    flex-grow:1;
+}
+
+/* SUBTLE CHURCH LIGHT EFFECT */
+
+.card::after{
+    content:"";
+
+    position:absolute;
+
+    bottom:-60px;
+    left:-60px;
+
+    width:180px;
+    height:180px;
+
+    background:rgba(59,130,246,0.08);
+
+    border-radius:50%;
+}
+
+/* SMOOTHER LOOK */
+
+
+/* BEAUTIFUL TITLE LINE */
+
+.card h3::after{
+    content:"";
+
+    display:block;
+
+    width:60px;
+    height:4px;
+
+    background:#2563eb;
+
+    border-radius:10px;
+
+    margin-top:10px;
+    
+    margin-bottom:20px;
+
+}
+
+/* BUTTON POSITION */
+
+.card a{
+    align-self:flex-start;
+}
+
+/* BUTTONS */
+
+.card a{
+    display:inline-block;
+    text-decoration:none;
+    padding:13px 24px;
+    border-radius:40px;
+    font-size:1rem;
+    font-weight:700;
+    color:white;
+    transition:0.35s ease;
+    margin-top:20px;
+    text-align:center;
+    letter-spacing:0.5px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.12);
+
+    position:relative;
+    overflow:hidden;
+}
+
+.card a:hover{
+    transform:translateY(-3px) scale(1.03);
+    box-shadow:0 8px 20px rgba(0,0,0,0.18);
+}
+
+/* SHINING EFFECT */
+
+.card a::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background:rgba(255,255,255,0.25);
+    transition:0.5s;
+}
+
+.card a:hover::before{
+    left:100%;
+}
+
+.card a{
+    width:160px;
+}
+.card{
+    border:1px solid rgba(37,99,235,0.12);
+}
+/* DIFFERENT BUTTON COLORS */
+
+.faith-btn {
+    background: #f59e0b;
+}
+
+.faith-btn:hover {
+    background: #d97706;
+}
+
+.kingdom-btn {
+    background:#7c3aed;
+}
+
+.kingdom-btn:hover {
+    background: #6d28d9;
+}
+
+.foundation-btn {
+    background:#10b981;
+}
+
+.foundation-btn:hover {
+    background: #059669;
+}
+
+.encounter-btn {
+    background: #16a34a;
+}
+
+.encounter-btn:hover {
+    background: #15803d;
+}
+
+.discipleship-btn {
+    background: #2563eb;
+}
+
+.discipleship-btn:hover {
+    background: #1d4ed8;
+}
+
+.mentorship-btn {
+    background: #8b5cf6;
+}
+
+.mentorship-btn:hover {
+    background: #7c3aed;
+}
+
+.story-btn {
+    background: #ef4444;
+}
+
+.story-btn:hover {
+    background: #dc2626;
+}
+
+.testimony-btn {
+    background: #14b8a6;
+}
+
+.testimony-btn:hover {
+    background: #0f766e;
+}
+
+.devotional-btn {
+    background: #ec4899;
+}
+
+.devotional-btn:hover {
+    background: #db2777;
+}
+
+.prophetic-btn {
+    background: #f97316;
+}
+
+.prophetic-btn:hover {
+    background: #ea580c;
+}
+
+.video-btn {
+    background: #6366f1;
+}
+
+.video-btn:hover {
+    background: #4f46e5;
+}
+
+.events-btn {
+    background: #0ea5e9;
+}
+
+.events-btn:hover {
+    background: #0284c7;
+}
+
+.projects-btn {
+    background: #84cc16;
+}
+
+.projects-btn:hover {
+    background: #65a30d;
+}
+
+/* FOOTER */
+
+footer {
+    background: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width: 768px) {
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    
+        .logo {
+        width: 130px;
+    }
+}
+
+/* LESSON LIST LINKS */
+
+ul {
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+ul li {
+    margin-bottom: 12px;
+    font-size: 1rem;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #1e293b;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    color: #2563eb;
+    padding-left: 5px;
+}
+
+/* WHATSAPP BUTTON */
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 28px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+}
+
+/* ANIMATION */
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}.lessons-section{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    padding:40px 20px;
+}
+
+.lesson-card{
+    background:#ffffff;
+    border-radius:18px;
+    padding:30px 25px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    border-top:5px solid #35bdf6;
+    transition:0.3s;
+}
+
+.lesson-card:hover{
+    transform:translateY(-5px);
+}
+
+.lesson-card h2{
+    font-size:26px;
+    margin-bottom:15px;
+    color:#333;
+}
+
+.lesson-card p{
+    color:#666;
+    line-height:1.7;
+    margin-bottom:25px;
+}
+
+.lesson-card a{
+    display:inline-block;
+    padding:12px 22px;
+    background:#35bdf6;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:600;
+}
+
+.lesson-card a:hover{
+    background:#1da8e6;
+}
+@media(max-width:600px){
+
+    section{
+        padding:25px 15px;
+    }
+
+    .card{
+        padding:25px 20px;
+        min-height:auto;
+    }
+
+    header{
+        padding:90px 15px;
+    }
+
+    nav a{
+        display:inline-block;
+        margin:8px;
+     }
+
+}
+
+/* SECTION TITLE */
+
+section h2{
+    font-size:2.2rem;
+    margin-bottom:30px;
+    color:#111827;
+    text-align:center;
+}
+
+/* CARD ANIMATION */
+
+.card{
+    animation:fadeInUp 0.8s ease;
+}
+
+@keyframes fadeInUp{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:2.2rem;
+    }
+
+    header p{
+        font-size:1rem;
+    }
+
+    section{
+        padding:30px 20px;
+    }
+
+    .card{
+        padding:25px 20px;
+    }
+}.hero-buttons{
+    margin-top:30px;
+}
+
+.hero-buttons a{
+    margin:10px;
+    display:inline-block;
+}
+/* BUTTON */
+
+.lesson-card a{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 24px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:40px;
+    font-weight:700;
+    transition:0.3s ease;
+    box-shadow:0 4px 10px rgba(37,99,235,0.25);
+}
+
+.lesson-btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-3px);
+}
+.sunday-btn{
+    background:#2563eb;
+}
+
+.sunday-btn:hover{
+    background:#1d4ed8;
+}
+
+.youth-btn{
+    background:#f97316;
+}
+
+.youth-btn:hover{
+    background:#ea580c;
+}
+
+.women-btn{
+    background:#ec4899;
+}
+
+.women-btn:hover{
+    background:#db2777;
+}
+
+.men-btn{
+    background:#14b8a6;
+}
+
+.men-btn:hover{
+    background:#0f766e;
+}
+
+.children-btn{
+    background:#84cc16;
+}
+
+.children-btn:hover{
+    background:#65a30d;
+}/* LESSON CLASS BUTTON COLORS */
+
+.sunday-btn{
+    background:#2563eb;
+}
+.sunday-btn:hover{
+    background:#1d4ed8;
+}
+
+.youth-btn{
+    background:#f97316;
+}
+.youth-btn:hover{
+    background:#ea580c;
+}
+
+.women-btn{
+    background:#ec4899;
+}
+.women-btn:hover{
+    background:#db2777;
+}
+
+.men-btn{
+    background:#14b8a6;
+}
+.men-btn:hover{
+    background:#0f766e;
+}
+
+.children-btn{
+    background:#84cc16;
+}
+.children-btn:hover{
+    background:#65a30d;
+}
+
+.leadership-btn{
+    background:#7c3aed;
+}
+.leadership-btn:hover{
+    background:#6d28d9;
+}
+
+.prayer-btn{
+    background:#dc2626;
+}
+.prayer-btn:hover{
+    background:#b91c1c;
+}
+
+.bible-btn{
+    background:#0891b2;
+}
+.bible-btn:hover{
+    background:#0e7490;
+}.lesson-btn{
+    display:inline-block;
+    padding:12px 24px;
+    background:#2563eb !important;
+    color:white !important;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    border:none;
+    box-shadow:0 4px 10px rgba(37,99,235,0.3);
+}
+
+.lesson-btn:hover{
+    background:#1d4ed8 !important;
+}.card{
+    text-decoration:none;
+    color:inherit;
+    display:block;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    transition:0.3s;
+}.card{
+    text-decoration:none;
+    color:inherit;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    transition:0.3s;
+ 
+}details{
+    margin-top:15px;
+}
+
+summary{
+    cursor:pointer;
+    font-weight:bold;
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+summary:hover{
+    color:#1d4ed8;
+}
+
+/* READ ALOUD BUTTONS */
+
+.card button{
+    display:inline-block;
+    margin-top:15px;
+    margin-right:10px;
+    padding:12px 22px;
+    border:none;
+    border-radius:40px;
+    cursor:pointer;
+    font-size:0.95rem;
+    font-weight:700;
+    color:white;
+    transition:0.3s ease;
+    box-shadow:0 4px 10px rgba(0,0,0,0.12);
+}
+
+.card button:hover{
+    transform:translateY(-3px);
+}
+
+/* READ BUTTON */
+
+.read-btn{
+    background:#16a34a;
+}
+
+.read-btn:hover{
+    background:#15803d;
+}
+
+/* STOP BUTTON */
+
+.stop-btn{
+    background:#dc2626;
+}
+
+.stop-btn:hover{
+    background:#b91c1c;
+}
+
+/* ===================================
+   GOD'S GRACE SANCTUARY IMPROVEMENTS
+=================================== */
+
+/* BETTER MOBILE NAVIGATION */
+
+@media(max-width:768px){
+
+    nav{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:5px;
+    }
+
+    nav a{
+        margin:5px;
+        font-size:0.9rem;
+    }
+
+}
+
+/* ACTIVE PAGE */
+
+nav a.active{
+    color:#60a5fa;
+    border-bottom:2px solid #60a5fa;
+    padding-bottom:5px;
+}
+
+/* SECTION SPACING */
+
+section{
+    max-width:1200px;
+    margin:auto;
+}
+
+/* IMPROVED PARAGRAPHS */
+
+section p{
+    font-size:1.05rem;
+    line-height:1.9;
+}
+
+/* BETTER BLOCKQUOTES */
+
+blockquote{
+    background:#f8fafc;
+    border-left:5px solid #2563eb;
+    padding:25px;
+    border-radius:12px;
+    line-height:1.9;
+    font-style:italic;
+    color:#334155;
+}
+
+/* IMPROVED FOOTER */
+
+footer{
+    border-top:4px solid #2563eb;
+}
+
+footer p{
+    margin:8px 0;
+}
+
+/* MEMBERSHIP BUTTON */
+
+.membership-btn{
+    background:#059669;
+}
+
+.membership-btn:hover{
+    background:#047857;
+}
+
+/* CONTACT BUTTON */
+
+.contact-btn{
+    background:#2563eb;
+}
+
+.contact-btn:hover{
+    background:#1d4ed8;
+}
+
+/* BETTER FORMS */
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #d1d5db;
+    border-radius:10px;
+    font-size:16px;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    outline:none;
+    border-color:#2563eb;
+    box-shadow:0 0 0 3px rgba(37,99,235,0.15);
+}
+
+/* IMAGE CONSISTENCY */
+
+.gallery-image,
+.leader-image{
+    object-fit:cover;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* CARD CONSISTENCY */
+
+.card{
+    transition:all 0.35s ease;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+/* SMOOTH BUTTONS */
+
+a[class$="-btn"]{
+    transition:all 0.3s ease;
+}
+
+/* HEADER IMPROVEMENT */
+
+header h1{
+    text-shadow:0 3px 10px rgba(0,0,0,0.25);
+}
+
+header p{
+    max-width:850px;
+    margin:auto;
+}
+
+/* CONTACT ITEMS */
+
+.contact-item{
+    margin-bottom:15px;
+    font-size:1.05rem;
+}
+
+/* GOOGLE FORM BUTTONS */
+
+.discipleship-btn,
+.faith-btn,
+.events-btn,
+.projects-btn{
+    min-width:180px;
+    text-align:center;
+}
+
+/* BETTER LISTS */
+
+ul li{
+    line-height:1.8;
+}
+
+/* SCRIPTURE REFERENCES */
+
+blockquote strong{
+    color:#2563eb;
+}.membership-btn{
+    background:#059669;
+}
+
+.membership-btn:hover{
+    background:#047857;
+}
+
+.contact-btn{
+    background:#2563eb;
+}
+
+.contact-btn:hover{
+    background:#1d4ed8;
+}
+
+.facebook-btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#1877F2;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.facebook-btn:hover{
+    opacity:0.9;
+}
+.youtube-btn{
+    display:inline-block;
+    padding:10px 20px;
+    background:#FF0000;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+/* ===================================
+   ADMIN DASHBOARD
+=================================== */
+
+.admin-card{
+    text-align:center;
+}
+
+.admin-card a{
+    margin-top:15px;
+}
+
+.notice{
+    background:#fef3c7;
+    border-left:6px solid #f59e0b;
+    padding:20px;
+    border-radius:15px;
+    margin-bottom:40px;
+}
+
+/* continue with the rest of the CSS block... */
