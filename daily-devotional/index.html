@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Daily Devotional | God's Grace Sanctuary</title>
+
+<link rel="stylesheet" href="../style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* PAGE STYLE */
+
+body{
+    font-family:'Poppins',sans-serif;
+}
+
+/* NAVIGATION */
+
+nav{
+    padding:15px 25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+}
+
+/* HEADER */
+
+header{
+    text-align:center;
+    padding:90px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:15px;
+    color:#0f172a;
+}
+
+header p{
+    max-width:750px;
+    margin:auto;
+    color:#475569;
+    line-height:1.8;
+    font-size:1.1rem;
+}
+
+/* SECTION */
+
+section{
+    padding:40px 8%;
+}
+
+/* CARDS GRID */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+/* CARD */
+
+.card{
+    background:linear-gradient(to bottom right,#ffffff,#fef9c3);
+
+    border-radius:25px;
+
+    padding:30px 25px;
+
+    border-top:6px solid #eab308;
+
+    min-height:260px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-start;
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,0.08),
+    0 3px 10px rgba(234,179,8,0.08);
+
+    transition:all 0.4s ease;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,0.12),
+    0 5px 15px rgba(234,179,8,0.15);
+}
+
+/* LIGHT EFFECT */
+
+.card::before{
+    content:"";
+
+    position:absolute;
+
+    top:-50px;
+    right:-50px;
+
+    width:140px;
+    height:140px;
+
+    background:rgba(255,255,255,0.3);
+
+    border-radius:50%;
+}
+
+/* TITLES */
+
+.card h3{
+    font-size:1.4rem;
+    margin-bottom:20px;
+    color:#111827;
+}
+
+.card h3::after{
+    content:"";
+
+    display:block;
+
+    width:60px;
+    height:4px;
+
+    background:#eab308;
+
+    border-radius:10px;
+
+    margin-top:10px;
+}
+
+/* TEXT */
+
+.card p{
+    color:#475569;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+/* BUTTON */
+
+.card a{
+    display:inline-block;
+
+    text-decoration:none;
+
+    padding:13px 24px;
+
+    border-radius:40px;
+
+    background:linear-gradient(135deg,#eab308,#ca8a04);
+
+    color:white;
+
+    font-weight:700;
+
+    transition:0.3s ease;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.12);
+
+    width:170px;
+
+    text-align:center;
+}
+
+.card a:hover{
+    transform:translateY(-3px);
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.18);
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:30px 20px;
+    margin-top:40px;
+}
+
+footer p{
+    color:#475569;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<h1>Daily Devotional</h1>
+
+<p>
+Daily encouragement, scripture reflections, spiritual growth teachings,
+and devotionals for walking with God every day.
+</p>
+
+</header>
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<a href="../index.html">Home</a>
+
+</nav>
+
+<!-- DEVOTIONALS -->
+
+<section>
+
+<h2>Daily Devotions</h2>
+
+<div class="cards">
+
+<!-- DEVOTION 1 -->
+
+<div class="card">
+
+<h3>Morning Devotion</h3>
+
+<p>
+Start your day with prayer, scripture meditation, and spiritual encouragement.
+</p>
+
+<a href="LESSONS/Morning Devotion.pdf" target="_blank">
+
+Open Devotion
+
+</a>
+
+</div>
+
+<!-- DEVOTION 2 -->
+
+<div class="card">
+
+<h3>Walking With God</h3>
+
+<p>
+Daily teachings on maintaining a close relationship and fellowship with God.
+</p>
+
+<a href="LESSONS/Walking with God.pdf" target="_blank">
+
+Open Devotion
+
+</a>
+
+</div>
+
+<!-- DEVOTION 3 -->
+
+<div class="card">
+
+<h3>Daily Scripture Reflection</h3>
+
+<p>
+Short reflections and meditations from God’s Word for daily spiritual growth.
+</p>
+
+<a href="LESSONS/Daily Scripture Reflection.pdf" target="_blank">
+
+Open Devotion
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>God's Grace Sanctuary</p>
+
+<p>godsgracesanctuary@gmail.com</p>
+
+<p>+254721335631</p>
+
+</footer>
+
+</body>
+
+</html>
