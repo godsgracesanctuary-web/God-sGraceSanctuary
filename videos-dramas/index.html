@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Video Dramas | God's Grace Sanctuary</title>
+
+<link rel="stylesheet" href="../style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* PAGE STYLE */
+
+body{
+    font-family:'Poppins',sans-serif;
+}
+
+/* NAVIGATION */
+
+nav{
+    padding:15px 25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+}
+
+/* HEADER */
+
+header{
+    text-align:center;
+    padding:90px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:15px;
+    color:#0f172a;
+}
+
+header p{
+    max-width:750px;
+    margin:auto;
+    color:#475569;
+    line-height:1.8;
+    font-size:1.1rem;
+}
+
+/* SECTION */
+
+section{
+    padding:40px 8%;
+}
+
+/* CARDS GRID */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+/* CARD */
+
+.card{
+    background:linear-gradient(to bottom right,#ffffff,#fee2e2);
+
+    border-radius:25px;
+
+    padding:30px 25px;
+
+    border-top:6px solid #ef4444;
+
+    min-height:260px;
+
+    height:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-start;
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,0.08),
+    0 3px 10px rgba(239,68,68,0.08);
+
+    transition:all 0.4s ease;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,0.12),
+    0 5px 15px rgba(239,68,68,0.15);
+}
+
+/* LIGHT EFFECT */
+
+.card::before{
+    content:"";
+
+    position:absolute;
+
+    top:-50px;
+    right:-50px;
+
+    width:140px;
+    height:140px;
+
+    background:rgba(255,255,255,0.3);
+
+    border-radius:50%;
+}
+
+/* TITLES */
+
+.card h3{
+    font-size:1.4rem;
+    margin-bottom:20px;
+    color:#111827;
+}
+
+.card h3::after{
+    content:"";
+
+    display:block;
+
+    width:60px;
+    height:4px;
+
+    background:#ef4444;
+
+    border-radius:10px;
+
+    margin-top:10px;
+}
+
+/* TEXT */
+
+.card p{
+    color:#475569;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+/* BUTTON */
+
+.card a{
+    display:inline-block;
+
+    text-decoration:none;
+
+    padding:13px 24px;
+
+    border-radius:40px;
+
+    background:linear-gradient(135deg,#ef4444,#dc2626);
+
+    color:white;
+
+    font-weight:700;
+
+    transition:0.3s ease;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.12);
+
+    width:160px;
+
+    text-align:center;
+}
+
+.card a:hover{
+    transform:translateY(-3px);
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.18);
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:30px 20px;
+    margin-top:40px;
+}
+
+footer p{
+    color:#475569;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<h1>Video Dramas</h1>
+
+<p>
+Christian drama scripts, youth performances, Bible story dramas,
+and evangelistic presentations for ministry and outreach.
+</p>
+
+</header>
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<a href="../index.html">Home</a>
+
+</nav>
+
+<!-- DRAMAS -->
+
+<section>
+
+<h2>Drama Scripts & Videos</h2>
+
+<div class="cards">
+
+<!-- DRAMA 1 -->
+
+<div class="card">
+
+<h3>The Good Samaritan</h3>
+
+<p>
+A powerful drama on compassion, kindness, and loving your neighbor.
+</p>
+
+<a href="VIDEOS/The Good Samaritan.pdf" target="_blank">
+
+Open Drama
+
+</a>
+
+</div>
+
+<!-- DRAMA 2 -->
+
+<div class="card">
+
+<h3>The Prodigal Son</h3>
+
+<p>
+A touching drama about repentance, forgiveness, and restoration.
+</p>
+
+<a href="VIDEOS/The Prodigal Son.mp4" target="_blank">
+
+Watch Video
+
+</a>
+
+</div>
+
+<!-- DRAMA 3 -->
+
+<div class="card">
+
+<h3>Elder David Kigomo</h3>
+
+<p>
+Official inspirational Christian video presentation and ministry drama.
+</p>
+
+<a href="VIDEOS/UHINGA.mp4" target="_blank">
+
+Watch Video
+
+</a>
+
+</div>
+
+<!-- DRAMA 4 -->
+
+<div class="card">
+
+<h3>Meet Jesus</h3>
+
+<p>
+An evangelistic drama presenting the transforming power of Jesus Christ.
+</p>
+
+<a href="VIDEOS/Meet Jesus.pdf" target="_blank">
+
+Open Drama
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>God's Grace Sanctuary</p>
+
+<p>godsgracesanctuary@gmail.com</p>
+
+<p>+254721335631</p>
+
+</footer>
+
+</body>
+
+</html>
