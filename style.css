@@ -1120,6 +1120,30 @@ blockquote strong{
     width:100%;
     margin-top:15px;
 }
+.audio-card{
+    max-width:700px;
+    margin:30px auto;
+    padding:20px;
+    background:white;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
 
-/* continue with the rest of the CSS block... */
+.audio-cover{
+    width:100%;
+    max-width:450px;
+    border-radius:12px;
+    margin-bottom:15px;
+}
+
+.audio-card h3{
+    margin-top:10px;
+}
+
+.audio-card audio{
+    width:100%;
+    margin-top:15px;
+}
+
 /* continue with the rest of the CSS block... */
