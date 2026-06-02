@@ -818,7 +818,37 @@ summary:hover{
 
     nav a{
         margin:5px;
-        font-size:0.9rem;
+        font-size:1rem;
+    }
+
+    body{
+        font-size:17px;
+    }
+
+    p,
+    li{
+        font-size:17px;
+        line-height:1.8;
+    }
+
+    h1{
+        font-size:2rem;
+    }
+
+    h2{
+        font-size:1.6rem;
+    }
+
+    h3{
+        font-size:1.3rem;
+    }
+
+    button,
+    .btn,
+    input,
+    select,
+    textarea{
+        font-size:17px;
     }
 
 }
