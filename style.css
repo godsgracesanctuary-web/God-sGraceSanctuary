@@ -832,6 +832,11 @@ summary:hover{
         font-size:17px;
     }
 
+    .logo{
+        width:180px;
+        max-width:75%;
+    }
+
     p,
     li{
         font-size:17px;
@@ -1151,7 +1156,8 @@ blockquote strong{
     margin-top:15px;
 }
 .logo {
-    width: 300px;
+    width: 220px;
+    max-width: 80%;
     margin-bottom: 25px;
     border-radius: 50%;
     box-shadow: 0 5px 20px rgba(0,0,0,0.4);
