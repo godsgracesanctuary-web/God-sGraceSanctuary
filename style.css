@@ -1186,5 +1186,11 @@ header{
     text-align:center;
     padding:120px 20px;
 }
+.tagline{
+    text-align:center;
+    width:100%;
+    margin:0 auto;
+    display:block;
+}
 
 /* continue with the rest of the CSS block... */
