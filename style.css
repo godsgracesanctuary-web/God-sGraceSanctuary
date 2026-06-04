@@ -1205,4 +1205,48 @@ header{
     max-width:600px;
     margin:auto;
 }
+@media(max-width:768px){
+
+    .nav-btn{
+        padding:15px 25px;
+        font-size:1.1rem;
+    }
+
+}
+.page-nav{
+    display:flex;
+    justify-content:space-between;
+    margin:30px 0;
+}
+
+.nav-btn{
+    background:#0b3d91;
+    color:white;
+    text-decoration:none;
+    padding:12px 20px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.nav-btn:hover{
+    opacity:0.9;
+}
+.page-nav{
+    position:sticky;
+    bottom:10px;
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
+    margin-top:30px;
+}
+.nav-btn{
+    flex:1;
+    text-align:center;
+    background:#0b3d91;
+    color:white;
+    padding:15px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+}
 /* continue with the rest of the CSS block... */
