@@ -10,7 +10,12 @@ html {
 
 body{
     font-family:'Poppins',sans-serif;
-    background:linear-gradient(to bottom,#f4f7fb,#eaf2ff);
+    background:linear-gradient(
+        to bottom,
+        #f8fbff,
+        #eef4ff,
+        #ffffff
+    );
     color:#222;
     line-height:1.6;
     overflow-x:hidden;
