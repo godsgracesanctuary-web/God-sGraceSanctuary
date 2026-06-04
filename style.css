@@ -1165,5 +1165,11 @@ blockquote strong{
     font-size: 1.15rem;
     line-height: 1.8;
 }
+header {
+    background-image: url('images/gracepath-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 /* continue with the rest of the CSS block... */
