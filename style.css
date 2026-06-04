@@ -49,11 +49,12 @@ header p {
 }
 /* LOGO */
 
-.logo {
-    width: 280px;
-    margin-bottom: 25px;
-    border-radius: 50%;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+.logo{
+    width:260px;
+    max-width:85%;
+    margin-bottom:25px;
+    border-radius:50%;
+    box-shadow:0 5px 20px rgba(0,0,0,0.4);
 }
 
 .logo:hover {
@@ -1154,13 +1155,6 @@ blockquote strong{
 .audio-card audio{
     width:100%;
     margin-top:15px;
-}
-.logo {
-    width: 220px;
-    max-width: 80%;
-    margin-bottom: 25px;
-    border-radius: 50%;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
 }
 
 .tagline {
