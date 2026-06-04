@@ -1170,11 +1170,21 @@ blockquote strong{
     font-size: 1.15rem;
     line-height: 1.8;
 }
-header {
-    background-image: url('images/gracepath-hero.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+header{
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
+    ),
+    url('images/gracepath-hero.jpg');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    color:white;
+    text-align:center;
+    padding:120px 20px;
 }
 
 /* continue with the rest of the CSS block... */
