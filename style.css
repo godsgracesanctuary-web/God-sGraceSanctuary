@@ -1145,5 +1145,25 @@ blockquote strong{
     width:100%;
     margin-top:15px;
 }
+.logo {
+    width: 300px;
+    margin-bottom: 25px;
+    border-radius: 50%;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+.tagline {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 15px 0;
+    color: #ffd700;
+}
+
+.hero-text {
+    max-width: 900px;
+    margin: 20px auto;
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
 
 /* continue with the rest of the CSS block... */
