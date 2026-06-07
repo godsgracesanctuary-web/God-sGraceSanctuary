@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Learning Pathways | GracePath Network</title>
+
+<link rel="stylesheet" href="../style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* PAGE STYLE */
+
+body{
+    font-family:'Poppins',sans-serif;
+}
+
+/* NAVIGATION */
+
+nav{
+    padding:15px 25px;
+    margin-top:20px;
+    text-align:center;
+}
+
+nav a{
+    text-decoration:none;
+    color:#0f172a;
+    font-weight:600;
+}
+
+/* HEADER */
+
+header{
+    text-align:center;
+    padding:90px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:15px;
+    color:#0f172a;
+}
+
+header p{
+    max-width:750px;
+    margin:auto;
+    color:#475569;
+    line-height:1.8;
+    font-size:1.1rem;
+}
+
+/* SECTION */
+
+section{
+    padding:40px 8%;
+}
+
+/* CARDS GRID */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+/* CARD */
+
+.card{
+    background:linear-gradient(to bottom right,#ffffff,#fef3c7);
+
+    border-radius:25px;
+
+    padding:30px 25px;
+
+    border-top:6px solid #f59e0b;
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,0.08),
+    0 3px 10px rgba(245,158,11,0.08);
+
+    transition:all 0.4s ease;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,0.12),
+    0 5px 15px rgba(245,158,11,0.15);
+}
+
+/* LIGHT EFFECT */
+
+.card::before{
+    content:"";
+
+    position:absolute;
+
+    top:-50px;
+    right:-50px;
+
+    width:140px;
+    height:140px;
+
+    background:rgba(255,255,255,0.3);
+
+    border-radius:50%;
+}
+
+/* TITLES */
+
+.card h3{
+    font-size:1.4rem;
+    margin-bottom:20px;
+    color:#111827;
+}
+
+.card h3::after{
+    content:"";
+
+    display:block;
+
+    width:60px;
+    height:4px;
+
+    background:#f59e0b;
+
+    border-radius:10px;
+
+    margin-top:10px;
+}
+section h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#0f172a;
+}
+/* TEXT */
+
+.card p{
+    color:#475569;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+/* BUTTON */
+
+.card a{
+    display:inline-block;
+
+    text-decoration:none;
+
+    padding:13px 24px;
+
+    border-radius:40px;
+
+    background:linear-gradient(135deg,#f59e0b,#d97706);
+
+    color:white;
+
+    font-weight:700;
+
+    transition:0.3s ease;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.12);
+}
+
+.card a:hover{
+    transform:translateY(-3px);
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.18);
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:30px 20px;
+    margin-top:40px;
+}
+
+footer p{
+    color:#475569;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<header>
+
+<h1>Events & Updates</h1>
+
+<p>
+Stay informed about upcoming events, ministry activities, outreach programs,
+projects, photo galleries, and the latest updates from GracePath Network.
+</p>
+
+</header>
+
+</header>
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<a href="../index.html">Home</a>
+
+</nav>
+
+<section>
+
+<h2>Events & Updates</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>📅 Coming Events</h3>
+<p>
+Upcoming conferences, seminars, fellowships, crusades, training sessions, and special ministry events.
+</p>
+<a href="../events/index.html">
+Open Page
+</a>
+</div>
+
+<div class="card">
+<h3>📰 Ministry Moments</h3>
+<p>
+Ministry news, testimonies, reports, announcements, and highlights from GracePath activities.
+</p>
+<a href="../ministry-moments/index.html">
+Open Page
+</a>
+</div>
+
+<div class="card">
+<h3>📸 Gallery</h3>
+<p>
+Photos from services, conferences, outreach programs, community activities, and ministry events.
+</p>
+<a href="../gallery/index.html">
+Open Page
+</a>
+</div>
+
+<div class="card">
+<h3>🌍 Projects</h3>
+<p>
+Ministry development, missions, community outreach, church projects, and kingdom impact initiatives.
+</p>
+<a href="../projects/index.html">
+Open Page
+</a>
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p><strong>GracePath Network</strong></p>
+
+<p>Growing in Faith, Walking in Purpose.</p>
+
+<p>gracepathnetwork@gmail.com</p>
+
+<p>+254 721 335 631</p>
+
+</footer>
+
+</body>
+</html>
