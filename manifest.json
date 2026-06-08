@@ -2,6 +2,7 @@
   "name": "GracePath Network",
   "short_name": "GracePath",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#0b2d5c",

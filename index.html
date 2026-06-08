@@ -12,8 +12,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
-<link rel="icon" href="logo.png">
-<link rel="manifest" href="manifest.json">
+<link rel="icon" href="/logo.png">
+<link rel="manifest" href="/manifest.json">
 <meta name="theme-color" content="#0a2a66">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -23,7 +23,7 @@
 
 <header>
 
-<img src="logo.png" alt="GracePath Network Logo" class="logo">
+<img src="/logo.png" alt="GracePath Network Logo" class="logo">
 
 <h1>Welcome to GracePath Network</h1>
 
@@ -297,16 +297,6 @@ target="_blank"
 class="events-btn">
 Open Location Map
 </a>
-
-<script>
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js')
-      .then(() => console.log('Service Worker Registered'))
-      .catch(err => console.log('Service Worker Error', err));
-  });
-}
-</script>
 </section>
 
   <section>
@@ -344,5 +334,16 @@ Growing in Christ • Walking in Grace • Impacting Lives
 class="whatsapp-btn">
 💬
 </a>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js')
+      .then(() => console.log('Service Worker Registered'))
+      .catch(err => console.log('Service Worker Error', err));
+  });
+}
+</script>
+</section>
+
 </body>
 </html>
