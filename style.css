@@ -1249,5 +1249,13 @@ header{
     text-decoration:none;
     font-weight:bold;
 }
-text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+#ministries > p{
+    max-width:800px;
+    margin:0 auto 40px auto;
+    text-align:center;
+    line-height:1.8;
+    color:#475569;
+}
+
+
 /* continue with the rest of the CSS block... */
