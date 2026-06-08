@@ -3,8 +3,8 @@
   "short_name": "GracePath",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0b1f4d",
-  "theme_color": "#0b1f4d",
+  "background_color": "#ffffff",
+  "theme_color": "#0b2d5c",
   "icons": [
     {
       "src": "/icon-192.png",
