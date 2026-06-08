@@ -194,11 +194,13 @@ footer p{
 
 </style>
 
+<!-- PWA -->
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#1e3a8a">
+
 </head>
 
 <body>
-
-<header>
 
 <header>
 
@@ -208,8 +210,6 @@ footer p{
 Stay informed about upcoming events, ministry activities, outreach programs,
 projects, photo galleries, and the latest updates from GracePath Network.
 </p>
-
-</header>
 
 </header>
 
@@ -284,6 +284,12 @@ Open Page
 <p>+254 721 335 631</p>
 
 </footer>
-
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js')
+    .then(() => console.log('Service Worker Registered'))
+    .catch(err => console.log(err));
+}
+</script>
 </body>
 </html>

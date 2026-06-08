@@ -6,7 +6,7 @@ js<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Learning Pathways | GracePath Network</title>
+<title>Media & Library| GracePath Network</title>
 
 <link rel="stylesheet" href="../style.css">
 
@@ -193,7 +193,8 @@ footer p{
 }
 
 </style>
-
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#1e3a8a">
 </head>
 
 <body>
@@ -290,6 +291,12 @@ Open Library
 <p>+254 721 335 631</p>
 
 </footer>
-
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js')
+    .then(() => console.log('Service Worker Registered'))
+    .catch(err => console.log(err));
+}
+</script>
 </body>
 </html>
