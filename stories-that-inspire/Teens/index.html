@@ -9,7 +9,156 @@
 <title>Teen Inspiration Stories | GracePath Network</title>
 
 <link rel="stylesheet" href="../../style.css">
+<style>
 
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f5f7fb;
+    color:#333;
+}
+
+/* Navigation */
+
+nav{
+    padding:20px;
+}
+
+nav a{
+    text-decoration:none;
+    font-weight:600;
+    color:#0b2d5c;
+}
+
+/* Header */
+
+header{
+    text-align:center;
+    padding:80px 20px;
+}
+
+header h1{
+    color:#0b2d5c;
+    margin-bottom:15px;
+}
+
+header p{
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* Sections */
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+section h2{
+    text-align:center;
+    color:#0b2d5c;
+    margin-bottom:30px;
+}
+
+/* Cards Grid */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+/* Cards */
+
+.card{
+    background:#ffffff;
+    border:2px solid #0b2d5c;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    transition:all 0.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+}
+
+.card h3{
+    color:#0b2d5c;
+    margin-bottom:15px;
+}
+
+.card p{
+    line-height:1.7;
+    margin-bottom:20px;
+}
+
+/* Buttons */
+
+.card a{
+    display:inline-block;
+    background:#0b2d5c;
+    color:#ffffff;
+    text-decoration:none;
+    padding:12px 24px;
+    border-radius:30px;
+    border:2px solid #0b2d5c;
+    font-weight:600;
+    transition:all 0.3s ease;
+}
+
+.card a:hover{
+    background:#154a8a;
+    border-color:#154a8a;
+    color:#ffffff;
+}
+
+/* Featured Story */
+
+section:first-of-type .card{
+    max-width:800px;
+    margin:auto;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:40px 20px;
+    margin-top:40px;
+    background:#ffffff;
+    border-top:3px solid #0b2d5c;
+}
+
+footer h3{
+    color:#0b2d5c;
+}
+
+footer p{
+    margin:8px 0;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    header{
+        padding:50px 20px;
+    }
+
+    header h1{
+        font-size:2rem;
+    }
+
+    section{
+        padding:30px 15px;
+    }
+
+}
+
+</style>
 </head>
 
 <body>
