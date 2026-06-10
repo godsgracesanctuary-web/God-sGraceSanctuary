@@ -8,136 +8,224 @@
 
 <title>Primary Stories | GracePath Network</title>
 
-<link rel="stylesheet" href="../../style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
 body{
     font-family:'Poppins',sans-serif;
-    background:#f5f7fb;
+    background:#fefcf8;
     color:#333;
+    line-height:1.8;
 }
 
 /* Navigation */
 
 nav{
-    padding:20px;
+    background:#7c2d12;
+    padding:18px 25px;
 }
 
 nav a{
+    color:#ffffff;
     text-decoration:none;
     font-weight:600;
-    color:#0b2d5c;
 }
 
-/* Header */
+nav a:hover{
+    color:#fde68a;
+}
+
+/* Hero Section */
 
 header{
+    background:linear-gradient(135deg,#7c2d12,#ea580c);
+    color:#ffffff;
     text-align:center;
-    padding:80px 20px;
+    padding:100px 20px;
 }
 
 header h1{
-    color:#0b2d5c;
+    font-size:3rem;
+    color:#fde68a;
     margin-bottom:15px;
 }
 
 header p{
-    max-width:800px;
+    max-width:850px;
     margin:auto;
-    line-height:1.8;
+    font-size:1.1rem;
 }
 
 /* Sections */
 
 section{
-    max-width:1100px;
+    max-width:1200px;
     margin:auto;
-    padding:40px 20px;
+    padding:70px 20px;
 }
 
 section h2{
     text-align:center;
-    color:#0b2d5c;
-    margin-bottom:30px;
+    color:#7c2d12;
+    margin-bottom:35px;
+    font-size:2rem;
 }
 
-/* Cards Grid */
+/* Featured Story */
+
+.featured-story{
+    background:#ffffff;
+    max-width:850px;
+    margin:auto;
+    padding:40px;
+    text-align:center;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    border-top:8px solid #f59e0b;
+}
+
+.featured-story h3{
+    color:#7c2d12;
+    margin-bottom:15px;
+}
+
+.featured-story p{
+    margin-bottom:25px;
+}
+
+/* Story Cards */
 
 .cards{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
+    gap:30px;
 }
-
-/* Cards */
 
 .card{
     background:#ffffff;
-    border:2px solid #0b2d5c;
-    border-radius:20px;
-    padding:25px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.08);
-    transition:all 0.3s ease;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    transition:0.3s;
 }
 
 .card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+    transform:translateY(-8px);
+}
+
+.card-top{
+    height:8px;
+    background:#f59e0b;
+}
+
+.card-content{
+    padding:25px;
 }
 
 .card h3{
-    color:#0b2d5c;
+    color:#7c2d12;
     margin-bottom:15px;
 }
 
 .card p{
-    line-height:1.7;
     margin-bottom:20px;
 }
 
 /* Buttons */
 
-.card a{
+.btn{
     display:inline-block;
-    background:#0b2d5c;
+    background:#7c2d12;
     color:#ffffff;
     text-decoration:none;
-    padding:12px 24px;
+    padding:12px 25px;
     border-radius:30px;
-    border:2px solid #0b2d5c;
     font-weight:600;
-    transition:all 0.3s ease;
+    transition:0.3s;
 }
 
-.card a:hover{
-    background:#154a8a;
-    border-color:#154a8a;
-    color:#ffffff;
+.btn:hover{
+    background:#f59e0b;
+    color:#7c2d12;
 }
 
-/* Featured Story */
+/* Memory Verse */
 
-section:first-of-type .card{
-    max-width:800px;
+.memory-verse{
+    background:#ffffff;
+    max-width:850px;
     margin:auto;
+    padding:50px 30px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+.memory-verse p{
+    font-size:1.1rem;
+}
+
+.memory-verse strong{
+    display:block;
+    margin-top:15px;
+    color:#ea580c;
+}
+
+/* Learning Section */
+
+.learning-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.learning-box{
+    background:#ffffff;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.learning-box h3{
+    color:#7c2d12;
+    margin-bottom:10px;
 }
 
 /* Footer */
 
 footer{
+    background:#431407;
+    color:#ffffff;
     text-align:center;
-    padding:40px 20px;
-    margin-top:40px;
-    background:#ffffff;
-    border-top:3px solid #0b2d5c;
+    padding:60px 20px;
+    margin-top:50px;
 }
 
 footer h3{
-    color:#0b2d5c;
+    color:#fde68a;
+    margin-bottom:15px;
+    font-size:1.8rem;
 }
 
 footer p{
-    margin:8px 0;
+    margin:10px 0;
+}
+
+.tagline{
+    color:#fed7aa;
+}
+
+.copyright{
+    color:#fdba74;
+    margin-top:20px;
 }
 
 /* Mobile */
@@ -145,20 +233,21 @@ footer p{
 @media(max-width:768px){
 
     header{
-        padding:50px 20px;
+        padding:70px 20px;
     }
 
     header h1{
-        font-size:2rem;
+        font-size:2.2rem;
     }
 
     section{
-        padding:30px 15px;
+        padding:50px 15px;
     }
 
 }
 
 </style>
+
 </head>
 
 <body>
@@ -172,9 +261,7 @@ footer p{
 <h1>📖 Primary Stories</h1>
 
 <p>
-Character-building, faith-strengthening, and inspiring stories designed
-for primary school children to help them grow in wisdom, courage, faith,
-and godly values.
+Character-building, faith-strengthening, and inspiring stories designed for primary school children to help them grow in wisdom, courage, faith, and godly values.
 </p>
 
 </header>
@@ -183,15 +270,15 @@ and godly values.
 
 <h2>🌟 Featured Story</h2>
 
-<div class="card">
+<div class="featured-story">
 
 <h3>⚔️ David and Goliath</h3>
 
 <p>
-Discover how a young shepherd trusted God and defeated a giant through faith.
+Discover how a young shepherd trusted God and defeated a giant through faith and courage.
 </p>
 
-<a href="stories/david-and-goliath.pdf" target="_blank">
+<a href="stories/david-and-goliath.pdf" target="_blank" class="btn">
 Read Featured Story
 </a>
 
@@ -206,87 +293,57 @@ Read Featured Story
 <div class="cards">
 
 <div class="card">
-
+<div class="card-top"></div>
+<div class="card-content">
 <h3>🌾 Joseph the Dreamer</h3>
-
-<p>
-A story of faith, patience, forgiveness, and God's purpose.
-</p>
-
-<a href="stories/Joseph the Dreamer.pdf" target="_blank">
-Read Story
-</a>
-
+<p>A story of faith, patience, forgiveness, and God's purpose.</p>
+<a href="stories/Joseph the Dreamer.pdf" target="_blank" class="btn">Read Story</a>
+</div>
 </div>
 
 <div class="card">
-
+<div class="card-top"></div>
+<div class="card-content">
 <h3>⚔️ David and Goliath</h3>
-
-<p>
-Learning courage and faith when facing life's giants.
-</p>
-
-<a href="stories/david-and-goliath.pdf" target="_blank">
-Read Story
-</a>
-
+<p>Learning courage and faith when facing life's giants.</p>
+<a href="stories/david-and-goliath.pdf" target="_blank" class="btn">Read Story</a>
+</div>
 </div>
 
 <div class="card">
-
+<div class="card-top"></div>
+<div class="card-content">
 <h3>🤝 The Good Samaritan</h3>
-
-<p>
-A powerful lesson about kindness, compassion, and helping others.
-</p>
-
-<a href="stories/good-samaritan.pdf" target="_blank">
-Read Story
-</a>
-
+<p>A powerful lesson about kindness, compassion, and helping others.</p>
+<a href="stories/good-samaritan.pdf" target="_blank" class="btn">Read Story</a>
+</div>
 </div>
 
 <div class="card">
-
+<div class="card-top"></div>
+<div class="card-content">
 <h3>👑 Queen Esther</h3>
-
-<p>
-A story of bravery, purpose, and standing up for what is right.
-</p>
-
-<a href="stories/queen-esther.pdf" target="_blank">
-Read Story
-</a>
-
+<p>A story of bravery, purpose, and standing up for what is right.</p>
+<a href="stories/queen-esther.pdf" target="_blank" class="btn">Read Story</a>
+</div>
 </div>
 
 <div class="card">
-
+<div class="card-top"></div>
+<div class="card-content">
 <h3>🌾 Ruth's Loyalty</h3>
-
-<p>
-Learning faithfulness, commitment, and trusting God's plan.
-</p>
-
-<a href="stories/ruth-loyalty.pdf" target="_blank">
-Read Story
-</a>
-
+<p>Learning faithfulness, commitment, and trusting God's plan.</p>
+<a href="stories/ruth-loyalty.pdf" target="_blank" class="btn">Read Story</a>
+</div>
 </div>
 
 <div class="card">
-
+<div class="card-top"></div>
+<div class="card-content">
 <h3>🦁 Daniel in the Lions' Den</h3>
-
-<p>
-A story of unwavering faith and God's protection.
-</p>
-
-<a href="stories/daniel-lions-den.pdf" target="_blank">
-Read Story
-</a>
-
+<p>A story of unwavering faith and God's protection.</p>
+<a href="stories/daniel-lions-den.pdf" target="_blank" class="btn">Read Story</a>
+</div>
 </div>
 
 </div>
@@ -294,6 +351,8 @@ Read Story
 </section>
 
 <section>
+
+<div class="memory-verse">
 
 <h2>📖 Memory Verse</h2>
 
@@ -301,7 +360,9 @@ Read Story
 "Your word is a lamp to my feet and a light to my path."
 </p>
 
-<p><strong>Psalm 119:105</strong></p>
+<strong>Psalm 119:105</strong>
+
+</div>
 
 </section>
 
@@ -309,24 +370,24 @@ Read Story
 
 <h2>🎯 What Children Will Learn</h2>
 
-<div class="cards">
+<div class="learning-grid">
 
-<div class="card">
+<div class="learning-box">
 <h3>🙏 Faith</h3>
 <p>Trusting God in every situation.</p>
 </div>
 
-<div class="card">
+<div class="learning-box">
 <h3>💪 Courage</h3>
 <p>Standing strong when facing challenges.</p>
 </div>
 
-<div class="card">
+<div class="learning-box">
 <h3>❤️ Kindness</h3>
 <p>Showing love and compassion to others.</p>
 </div>
 
-<div class="card">
+<div class="learning-box">
 <h3>🌱 Character</h3>
 <p>Developing godly values and integrity.</p>
 </div>
@@ -339,16 +400,19 @@ Read Story
 
 <h3>GracePath Network</h3>
 
-<p><em>Transforming Lives Through Christ</em></p>
+<p class="tagline">
+Transforming Lives Through Christ
+</p>
 
 <p>📧 gracepathnetwork@gmail.com</p>
 
 <p>📞 +254 721 335 631</p>
 
-<p>&copy; 2026 GracePath Network. All Rights Reserved.</p>
+<p class="copyright">
+© 2026 GracePath Network. All Rights Reserved.
+</p>
 
 </footer>
 
 </body>
-
 </html>

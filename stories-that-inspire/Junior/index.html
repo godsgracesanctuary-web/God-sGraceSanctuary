@@ -8,25 +8,38 @@
 
 <title>Junior Youth Stories | GracePath Network</title>
 
-<link rel="stylesheet" href="../../style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
 body{
     font-family:'Poppins',sans-serif;
     background:#f5f7fb;
     color:#333;
+    line-height:1.7;
 }
 
 /* Navigation */
 
 nav{
-    padding:20px;
+    background:#0b2d5c;
+    padding:18px 25px;
 }
 
 nav a{
+    color:#ffffff;
     text-decoration:none;
     font-weight:600;
-    color:#0b2d5c;
+}
+
+nav a:hover{
+    color:#caf509;
 }
 
 /* Header */
@@ -34,31 +47,35 @@ nav a{
 header{
     text-align:center;
     padding:80px 20px;
+    background:linear-gradient(135deg,#0b2d5c,#154a8a);
+    color:#ffffff;
 }
 
 header h1{
-    color:#0b2d5c;
+    color:#caf509;
+    font-size:3rem;
     margin-bottom:15px;
 }
 
 header p{
     max-width:800px;
     margin:auto;
-    line-height:1.8;
+    font-size:1.1rem;
 }
 
 /* Sections */
 
 section{
-    max-width:1100px;
+    max-width:1200px;
     margin:auto;
-    padding:40px 20px;
+    padding:60px 20px;
 }
 
 section h2{
     text-align:center;
     color:#0b2d5c;
-    margin-bottom:30px;
+    margin-bottom:35px;
+    font-size:2rem;
 }
 
 /* Cards Grid */
@@ -73,16 +90,16 @@ section h2{
 
 .card{
     background:#ffffff;
-    border:2px solid #0b2d5c;
     border-radius:20px;
     padding:25px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    border:2px solid #0b2d5c;
+    box-shadow:0 6px 20px rgba(0,0,0,0.08);
     transition:all 0.3s ease;
 }
 
 .card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+    transform:translateY(-8px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
 }
 
 .card h3{
@@ -91,7 +108,6 @@ section h2{
 }
 
 .card p{
-    line-height:1.7;
     margin-bottom:20px;
 }
 
@@ -102,42 +118,77 @@ section h2{
     background:#0b2d5c;
     color:#ffffff;
     text-decoration:none;
-    padding:12px 24px;
+    padding:12px 25px;
     border-radius:30px;
-    border:2px solid #0b2d5c;
     font-weight:600;
-    transition:all 0.3s ease;
+    transition:0.3s;
 }
 
 .card a:hover{
-    background:#154a8a;
-    border-color:#154a8a;
-    color:#ffffff;
+    background:#caf509;
+    color:#0b2d5c;
 }
 
 /* Featured Story */
 
-section:first-of-type .card{
-    max-width:800px;
+.featured-card{
+    max-width:850px;
     margin:auto;
+    text-align:center;
+    border:3px solid #caf509;
+}
+
+/* Scripture Section */
+
+.scripture{
+    background:#ffffff;
+    border-radius:20px;
+    padding:40px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.scripture h2{
+    margin-bottom:20px;
+}
+
+.scripture p{
+    font-size:1.1rem;
+    color:#444;
+}
+
+.scripture strong{
+    color:#0b2d5c;
 }
 
 /* Footer */
 
 footer{
+    background:#0b2d5c;
+    color:#ffffff;
     text-align:center;
-    padding:40px 20px;
-    margin-top:40px;
-    background:#ffffff;
-    border-top:3px solid #0b2d5c;
+    padding:50px 20px;
+    margin-top:50px;
+    border-top:5px solid #caf509;
 }
 
 footer h3{
-    color:#0b2d5c;
+    color:#caf509;
+    margin-bottom:10px;
+    font-size:1.8rem;
 }
 
 footer p{
-    margin:8px 0;
+    margin:10px 0;
+}
+
+footer .contact{
+    font-size:1.05rem;
+}
+
+footer .copyright{
+    margin-top:20px;
+    opacity:0.9;
 }
 
 /* Mobile */
@@ -145,20 +196,25 @@ footer p{
 @media(max-width:768px){
 
     header{
-        padding:50px 20px;
+        padding:60px 20px;
     }
 
     header h1{
-        font-size:2rem;
+        font-size:2.2rem;
     }
 
     section{
-        padding:30px 15px;
+        padding:40px 15px;
+    }
+
+    .scripture{
+        padding:25px;
     }
 
 }
 
 </style>
+
 </head>
 
 <body>
@@ -182,12 +238,13 @@ courage, character, wisdom, and confidence in God during their formative years.
 
 <h2>🌟 Featured Story</h2>
 
-<div class="card">
+<div class="card featured-card">
 
 <h3>👑 Esther's Courage</h3>
 
 <p>
 Discover how a young queen trusted God and stood courageously to save her people.
+Learn powerful lessons about bravery, purpose, leadership, and faith.
 </p>
 
 <a href="stories/esthers-courage.pdf" target="_blank">
@@ -205,87 +262,39 @@ Read Featured Story
 <div class="cards">
 
 <div class="card">
-
 <h3>👑 Esther's Courage</h3>
-
-<p>
-A powerful lesson on bravery, purpose, and standing for what is right.
-</p>
-
-<a href="stories/esthers-courage.pdf" target="_blank">
-Read Story
-</a>
-
+<p>A powerful lesson on bravery, purpose, and standing for what is right.</p>
+<a href="stories/esthers-courage.pdf" target="_blank">Read Story</a>
 </div>
 
 <div class="card">
-
 <h3>⚔️ Gideon's Faith</h3>
-
-<p>
-How God used an ordinary young man to achieve extraordinary victories.
-</p>
-
-<a href="stories/gideons-faith.pdf" target="_blank">
-Read Story
-</a>
-
+<p>How God used an ordinary young man to achieve extraordinary victories.</p>
+<a href="stories/gideons-faith.pdf" target="_blank">Read Story</a>
 </div>
 
 <div class="card">
-
 <h3>👂 Samuel Hears God's Voice</h3>
-
-<p>
-Learning how to listen to God and respond to His calling.
-</p>
-
-<a href="stories/samuel-hears-god.pdf" target="_blank">
-Read Story
-</a>
-
+<p>Learning how to listen to God and respond to His calling.</p>
+<a href="stories/samuel-hears-god.pdf" target="_blank">Read Story</a>
 </div>
 
 <div class="card">
-
 <h3>🍞 The Boy with Five Loaves</h3>
-
-<p>
-A story showing how God can use even small gifts for great purposes.
-</p>
-
-<a href="stories/five-loaves.pdf" target="_blank">
-Read Story
-</a>
-
+<p>A story showing how God can use even small gifts for great purposes.</p>
+<a href="stories/five-loaves.pdf" target="_blank">Read Story</a>
 </div>
 
 <div class="card">
-
 <h3>🦅 The Eagle and the Chicken</h3>
-
-<p>
-A lesson on identity, vision, and discovering your true potential.
-</p>
-
-<a href="stories/eagle-and-chicken.pdf" target="_blank">
-Read Story
-</a>
-
+<p>A lesson on identity, vision, and discovering your true potential.</p>
+<a href="stories/eagle-and-chicken.pdf" target="_blank">Read Story</a>
 </div>
 
 <div class="card">
-
 <h3>🏆 Dare to Believe</h3>
-
-<p>
-An inspirational story about faith, determination, and overcoming obstacles.
-</p>
-
-<a href="stories/dare-to-believe.pdf" target="_blank">
-Read Story
-</a>
-
+<p>An inspirational story about faith, determination, and overcoming obstacles.</p>
+<a href="stories/dare-to-believe.pdf" target="_blank">Read Story</a>
 </div>
 
 </div>
@@ -300,7 +309,7 @@ Read Story
 
 <div class="card">
 <h3>💪 Courage</h3>
-<p>Standing strong when facing challenges.</p>
+<p>Standing strong when facing challenges and opposition.</p>
 </div>
 
 <div class="card">
@@ -324,6 +333,8 @@ Read Story
 
 <section>
 
+<div class="scripture">
+
 <h2>📖 Scripture Inspiration</h2>
 
 <p>
@@ -331,7 +342,11 @@ Read Story
 do not be discouraged, for the Lord your God will be with you wherever you go."
 </p>
 
+<br>
+
 <p><strong>Joshua 1:9</strong></p>
+
+</div>
 
 </section>
 
@@ -341,14 +356,19 @@ do not be discouraged, for the Lord your God will be with you wherever you go."
 
 <p><em>Transforming Lives Through Christ</em></p>
 
-<p>📧 gracepathnetwork@gmail.com</p>
+<p class="contact">
+📧 gracepathnetwork@gmail.com
+</p>
 
-<p>📞 +254 721 335 631</p>
+<p class="contact">
+📞 +254 721 335 631
+</p>
 
-<p>&copy; 2026 GracePath Network. All Rights Reserved.</p>
+<p class="copyright">
+© 2026 GracePath Network. All Rights Reserved.
+</p>
 
 </footer>
 
 </body>
-
 </html>

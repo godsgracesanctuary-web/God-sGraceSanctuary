@@ -8,61 +8,99 @@
 
 <title>Stories That Inspire | GracePath Network</title>
 
-<link rel="stylesheet" href="../style.css">
-
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
     font-family:'Poppins',sans-serif;
-    background:#f5f7fb;
-    color:#333;
+    background:linear-gradient(180deg,#f8fafc,#ecfdf5);
+    color:#334155;
+    line-height:1.8;
 }
 
 /* Navigation */
 
 nav{
-    padding:20px;
+    background:#064e3b;
+    padding:18px 8%;
 }
 
 nav a{
     text-decoration:none;
+    color:#ffffff;
     font-weight:600;
-    color:#0b2d5c;
+    transition:.3s;
 }
 
-/* Header */
+nav a:hover{
+    color:#fbbf24;
+}
+
+/* Hero */
 
 header{
+    background:
+    linear-gradient(rgba(6,78,59,.85),
+    rgba(6,78,59,.85)),
+    linear-gradient(135deg,#064e3b,#065f46);
+    color:white;
     text-align:center;
-    padding:80px 20px;
+    padding:110px 20px;
 }
 
 header h1{
-    font-size:3rem;
-    margin-bottom:15px;
-   header h1{
-    color:#0b2d5c;
+    font-size:3.5rem;
+    color:#fbbf24;
+    margin-bottom:20px;
 }
 
 header p{
-    max-width:800px;
+    max-width:850px;
     margin:auto;
-    line-height:1.8;
-    font-size:1.1rem;
+    font-size:1.15rem;
 }
 
 /* Sections */
 
 section{
-    padding:50px 8%;
+    padding:70px 8%;
 }
 
 section h2{
     text-align:center;
-    margin-bottom:30px;
-    color:#0b2d5c;
+    color:#064e3b;
+    margin-bottom:40px;
+    font-size:2rem;
+}
+
+/* Featured Story */
+
+.featured-card{
+    background:white;
+    max-width:900px;
+    margin:auto;
+    padding:40px;
+    border-radius:30px;
+    text-align:center;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    border-top:8px solid #fbbf24;
+}
+
+.featured-card h3{
+    color:#064e3b;
+    font-size:2rem;
+    margin-bottom:15px;
+}
+
+.featured-card p{
+    margin-bottom:25px;
 }
 
 /* Cards */
@@ -74,109 +112,118 @@ section h2{
 }
 
 .card{
-    background:#ffffff;
-    border:2px solid #0b2d5c;
-    border-radius:20px;
-    padding:25px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.08);
-    transition:all 0.3s ease;
+    background:rgba(255,255,255,.85);
+    backdrop-filter:blur(10px);
+    border-radius:25px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s;
+    border:1px solid rgba(255,255,255,.5);
 }
 
 .card:hover{
-    transform:translateY(-6px);
-    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+    transform:translateY(-10px);
 }
 
 .card h3{
+    color:#064e3b;
     margin-bottom:15px;
-    color:#0b2d5c;
 }
 
 .card p{
-    line-height:1.7;
     margin-bottom:20px;
 }
 
 /* Buttons */
 
-.card a{
+.btn{
     display:inline-block;
     text-decoration:none;
-    padding:12px 24px;
-    border-radius:30px;
+    padding:13px 28px;
+    border-radius:50px;
+    background:linear-gradient(135deg,#fbbf24,#f59e0b);
+    color:#ffffff;
     font-weight:600;
-    background:#0b2d5c;
-    color:#ffffff;
-    border:2px solid #0b2d5c;
-    transition:all 0.3s ease;
+    transition:.3s;
 }
 
-.card a:hover{
-    background:#154a8a;
-    border-color:#ee33bf;
-    color:#ffffff;
-}
-
-/* Featured Story */
-
-.featured{
-    text-align:center;
-}
-
-.featured .card{
-    max-width:800px;
-    margin:auto;
-}
-
-.featured .card h3{
-    font-size:1.6rem;
+.btn:hover{
+    transform:scale(1.05);
 }
 
 /* Scripture */
 
-.scripture{
+.scripture-box{
+    background:#064e3b;
+    color:white;
     text-align:center;
-    max-width:800px;
+    padding:60px 30px;
+    border-radius:30px;
+    max-width:1000px;
     margin:auto;
 }
 
-.scripture p{
-    line-height:1.8;
+.scripture-box h2{
+    color:#fbbf24;
+}
+
+.scripture-box p{
+    font-size:1.1rem;
+}
+
+.scripture-box strong{
+    color:#fbbf24;
 }
 
 /* Footer */
 
 footer{
-    background:linear-gradient(135deg,#0b2d5c,#154a8a);
+    background:#022c22;
     color:white;
+    padding:60px 20px;
+    margin-top:50px;
+}
+
+.footer-content{
+    max-width:1200px;
+    margin:auto;
     text-align:center;
-    padding:40px 20px;
-    margin-top:40px;
-    border-top:4px solid #fbbf24;
 }
 
 footer h3{
-    color:#0b2d5c;
+    color:#fbbf24;
+    font-size:2rem;
+    margin-bottom:15px;
 }
 
-footer p{
-    margin:8px 0;
+footer .mission{
+    color:#d1fae5;
+    margin-bottom:25px;
+}
+
+footer .contact{
+    margin:10px 0;
+}
+
+footer .copyright{
+    margin-top:25px;
+    color:#94a3b8;
 }
 
 /* Mobile */
 
 @media(max-width:768px){
 
+    header{
+        padding:80px 20px;
+    }
+
     header h1{
-        font-size:2.2rem;
+        font-size:2.4rem;
     }
 
     section{
-        padding:40px 20px;
-    }
-
-    .card{
-        padding:20px;
+        padding:50px 20px;
     }
 
 }
@@ -196,36 +243,30 @@ footer p{
 <h1>🌟 Stories That Inspire</h1>
 
 <p>
-Inspiring faith, character, purpose, courage, and hope through powerful stories
-that encourage spiritual growth, personal transformation, and godly living.
+Inspiring faith, character, purpose, courage, and hope through powerful stories that encourage spiritual growth, personal transformation, and godly living.
 </p>
 
 </header>
 
-<!-- Featured Story -->
-
-<section class="featured">
+<section>
 
 <h2>🌟 Featured Latest Story</h2>
 
-<div class="card">
+<div class="featured-card">
 
 <h3>Grace In The Marketplace</h3>
 
 <p>
-A powerful story of perseverance, integrity, faith, and God's favor in the marketplace.
-Discover how ordinary decisions can lead to extraordinary outcomes when guided by faith.
+A powerful story of perseverance, integrity, faith, and God's favor in the marketplace. Discover how ordinary decisions can lead to extraordinary outcomes when guided by faith.
 </p>
 
-<a href="STORIES/GRACE IN THE MARKET.pdf" target="_blank">
+<a href="STORIES/GRACE IN THE MARKET.pdf" target="_blank" class="btn">
 Read Featured Story
 </a>
 
 </div>
 
 </section>
-
-<!-- Categories -->
 
 <section>
 
@@ -236,44 +277,42 @@ Read Featured Story
 <div class="card">
 <h3>🌱 Beginners</h3>
 <p>Simple faith-building stories for young learners.</p>
-<a href="Beginners/index.html">Open Category</a>
+<a href="Beginners/index.html" class="btn">Open Category</a>
 </div>
 
 <div class="card">
 <h3>📖 Primary</h3>
 <p>Character-building and inspirational stories for children.</p>
-<a href="Primary/index.html">Open Category</a>
+<a href="Primary/index.html" class="btn">Open Category</a>
 </div>
 
 <div class="card">
 <h3>🔥 Junior</h3>
 <p>Stories of courage, faith, choices, and determination.</p>
-<a href="Junior/index.html">Open Category</a>
+<a href="Junior/index.html" class="btn">Open Category</a>
 </div>
 
 <div class="card">
 <h3>⭐ Teens</h3>
 <p>Purpose-driven and motivational stories for teenagers.</p>
-<a href="Teens/index.html">Open Category</a>
+<a href="Teens/index.html" class="btn">Open Category</a>
 </div>
 
 <div class="card">
 <h3>🎓 Young Adults</h3>
 <p>Leadership, purpose, vision, and life lessons.</p>
-<a href="Young Adults/index.html">Open Category</a>
+<a href="Young Adults/index.html" class="btn">Open Category</a>
 </div>
 
 <div class="card">
 <h3>🌍 All Ages</h3>
 <p>Stories suitable for families, groups, and individuals.</p>
-<a href="all-ages/index.html">Open Category</a>
+<a href="all-ages/index.html" class="btn">Open Category</a>
 </div>
 
 </div>
 
 </section>
-
-<!-- Latest Stories -->
 
 <section>
 
@@ -282,95 +321,72 @@ Read Featured Story
 <div class="cards">
 
 <div class="card">
-
 <h3>Grace In The Marketplace</h3>
-
-<p>
-Faith, perseverance, integrity, and purpose in everyday life.
-</p>
-
-<a href="STORIES/GRACE IN THE MARKET.pdf" target="_blank">
-Open Story
-</a>
-
+<p>Faith, perseverance, integrity, and purpose in everyday life.</p>
+<a href="STORIES/GRACE IN THE MARKET.pdf" target="_blank" class="btn">Open Story</a>
 </div>
 
 <div class="card">
-
 <h3>The Preacher's Daughter</h3>
-
-<p>
-A moving story of family, faith, struggles, and restoration.
-</p>
-
-<a href="STORIES/THE PREACHERS DAUGHTER.pdf" target="_blank">
-Open Story
-</a>
-
+<p>A moving story of family, faith, struggles, and restoration.</p>
+<a href="STORIES/THE PREACHERS DAUGHTER.pdf" target="_blank" class="btn">Open Story</a>
 </div>
 
 <div class="card">
-
-<h3>Overcomer?</h3>
-
-<p>
-Lessons on change, growth, opportunity, and adapting to life's transitions.
-</p>
-
-<a href="STORIES/Overcomer.pdf" target="_blank">
-Open Story
-</a>
-
+<h3>Overcomer</h3>
+<p>Lessons on change, growth, opportunity, and adapting to life's transitions.</p>
+<a href="STORIES/Overcomer.pdf" target="_blank" class="btn">Open Story</a>
 </div>
 
 <div class="card">
-
 <h3>Stoo Mbili Inspiration</h3>
-
-<p>
-An uplifting story filled with practical wisdom and encouragement.
-</p>
-
-<a href="STORIES/STOO MBILI INSPIRATION.pdf" target="_blank">
-Open Story
-</a>
-
+<p>An uplifting story filled with practical wisdom and encouragement.</p>
+<a href="STORIES/STOO MBILI INSPIRATION.pdf" target="_blank" class="btn">Open Story</a>
 </div>
 
 </div>
 
 </section>
 
-<!-- Scripture -->
+<section>
 
-<section class="scripture">
+<div class="scripture-box">
 
 <h2>📖 Scripture Inspiration</h2>
 
 <p>
-"Whatever is true, whatever is noble, whatever is right,
-whatever is pure, whatever is lovely, whatever is admirable—
-if anything is excellent or praiseworthy—think about such things."
+"Whatever is true, whatever is noble, whatever is right, whatever is pure, whatever is lovely, whatever is admirable—if anything is excellent or praiseworthy—think about such things."
 </p>
 
-<p><strong>Philippians 4:8</strong></p>
+<br>
+
+<strong>Philippians 4:8</strong>
+
+</div>
 
 </section>
 
 <footer>
 
+<div class="footer-content">
+
 <h3>GracePath Network</h3>
 
-<p><em>Transforming Lives Through Christ</em></p>
+<p class="mission">
+Transforming Lives Through Christ Through Stories, Lessons, and Inspiration
+</p>
 
-<p>📧 gracepathnetwork@gmail.com</p>
+<p class="contact">📧 gracepathnetwork@gmail.com</p>
 
-<p>📞 +254 721 335 631</p>
+<p class="contact">📞 +254 721 335 631</p>
 
-<p>&copy; 2026 GracePath Network. All Rights Reserved.</p>
+<p class="copyright">
+© 2026 GracePath Network. All Rights Reserved.
+</p>
+
+</div>
 
 </footer>
 
 </body>
-
 </html>

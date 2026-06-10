@@ -8,136 +8,230 @@
 
 <title>Teen Inspiration Stories | GracePath Network</title>
 
-<link rel="stylesheet" href="../../style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
 body{
     font-family:'Poppins',sans-serif;
-    background:#f5f7fb;
-    color:#333;
+    background:#f8fafc;
+    color:#334155;
+    line-height:1.8;
 }
 
 /* Navigation */
 
 nav{
-    padding:20px;
+    background:#312e81;
+    padding:18px 25px;
 }
 
 nav a{
+    color:#ffffff;
     text-decoration:none;
     font-weight:600;
-    color:#0b2d5c;
 }
 
-/* Header */
+nav a:hover{
+    color:#fbbf24;
+}
+
+/* Hero Section */
 
 header{
+    background:linear-gradient(135deg,#312e81,#4f46e5);
+    color:#ffffff;
     text-align:center;
-    padding:80px 20px;
+    padding:100px 20px;
 }
 
 header h1{
-    color:#caf509;
+    font-size:3.2rem;
+    color:#fbbf24;
     margin-bottom:15px;
 }
 
 header p{
-    max-width:800px;
+    max-width:850px;
     margin:auto;
-    line-height:1.8;
+    font-size:1.15rem;
 }
 
 /* Sections */
 
 section{
-    max-width:1100px;
+    max-width:1200px;
     margin:auto;
-    padding:40px 20px;
+    padding:70px 20px;
 }
 
 section h2{
     text-align:center;
-    color:#0b2d5c;
-    margin-bottom:30px;
+    color:#312e81;
+    margin-bottom:35px;
+    font-size:2rem;
 }
 
-/* Cards Grid */
+/* Featured Story */
+
+.featured-story{
+    background:#ffffff;
+    max-width:900px;
+    margin:auto;
+    padding:40px;
+    text-align:center;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    border-top:8px solid #fbbf24;
+}
+
+.featured-story h3{
+    color:#312e81;
+    margin-bottom:15px;
+    font-size:1.8rem;
+}
+
+.featured-story p{
+    margin-bottom:25px;
+}
+
+/* Story Cards */
 
 .cards{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
+    gap:30px;
 }
-
-/* Cards */
 
 .card{
     background:#ffffff;
-    border:2px solid #0b2d5c;
-    border-radius:20px;
-    padding:25px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.08);
-    transition:all 0.3s ease;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    transition:0.3s;
 }
 
 .card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+    transform:translateY(-8px);
+}
+
+.card-top{
+    height:8px;
+    background:#fbbf24;
+}
+
+.card-content{
+    padding:25px;
 }
 
 .card h3{
-    color:#0b2d5c;
+    color:#312e81;
     margin-bottom:15px;
 }
 
 .card p{
-    line-height:1.7;
     margin-bottom:20px;
 }
 
 /* Buttons */
 
-.card a{
+.btn{
     display:inline-block;
-    background:#0b2d5c;
+    background:#312e81;
     color:#ffffff;
     text-decoration:none;
-    padding:12px 24px;
+    padding:12px 25px;
     border-radius:30px;
-    border:2px solid #0b2d5c;
     font-weight:600;
-    transition:all 0.3s ease;
+    transition:0.3s;
 }
 
-.card a:hover{
-    background:#154a8a;
-    border-color:#154a8a;
+.btn:hover{
+    background:#fbbf24;
+    color:#312e81;
+}
+
+/* Learning Section */
+
+.learning-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.learning-box{
+    background:#ffffff;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.learning-box h3{
+    color:#312e81;
+    margin-bottom:10px;
+}
+
+/* Scripture Section */
+
+.scripture{
+    background:#312e81;
     color:#ffffff;
+    text-align:center;
+    padding:60px 30px;
+    border-radius:25px;
 }
 
-/* Featured Story */
+.scripture h2{
+    color:#fbbf24;
+    margin-bottom:25px;
+}
 
-section:first-of-type .card{
-    max-width:800px;
+.scripture p{
+    max-width:850px;
     margin:auto;
+    font-size:1.1rem;
+}
+
+.scripture strong{
+    display:block;
+    margin-top:20px;
+    color:#fbbf24;
 }
 
 /* Footer */
 
 footer{
+    background:#1e1b4b;
+    color:#ffffff;
     text-align:center;
-    padding:40px 20px;
-    margin-top:40px;
-    background:#ffffff;
-    border-top:3px solid #0b2d5c;
+    padding:60px 20px;
+    margin-top:50px;
 }
 
 footer h3{
-    color:#0b2d5c;
+    color:#fbbf24;
+    margin-bottom:15px;
+    font-size:1.8rem;
 }
 
 footer p{
-    margin:8px 0;
+    margin:10px 0;
+}
+
+.tagline{
+    color:#c7d2fe;
+}
+
+.copyright{
+    color:#a5b4fc;
+    margin-top:20px;
 }
 
 /* Mobile */
@@ -145,20 +239,21 @@ footer p{
 @media(max-width:768px){
 
     header{
-        padding:50px 20px;
+        padding:70px 20px;
     }
 
     header h1{
-        font-size:2rem;
+        font-size:2.3rem;
     }
 
     section{
-        padding:30px 15px;
+        padding:50px 15px;
     }
 
 }
 
 </style>
+
 </head>
 
 <body>
@@ -172,9 +267,7 @@ footer p{
 <h1>⭐ Teen Inspiration Stories</h1>
 
 <p>
-Powerful and inspiring stories designed to help teenagers discover
-their identity, purpose, potential, and calling while building
-strong faith and godly character.
+Powerful and inspiring stories designed to help teenagers discover their identity, purpose, potential, and calling while building strong faith and godly character.
 </p>
 
 </header>
@@ -183,7 +276,7 @@ strong faith and godly character.
 
 <h2>🌟 Featured Story</h2>
 
-<div class="card">
+<div class="featured-story">
 
 <h3>🏃 Awakening</h3>
 
@@ -191,7 +284,7 @@ strong faith and godly character.
 For anyone who has ever felt forgotten, defeated, or stuck, this book offers a powerful reminder: you were created for more.
 </p>
 
-<a href="stories/Awakening.pdf" target="_blank">
+<a href="stories/Awakening.pdf" target="_blank" class="btn">
 Read Featured Story
 </a>
 
@@ -206,88 +299,57 @@ Read Featured Story
 <div class="cards">
 
 <div class="card">
-
+<div class="card-top"></div>
+<div class="card-content">
 <h3>🏃 Run Your Race</h3>
-
-<p>
-Stay focused on your purpose and avoid distractions that hinder progress.
-</p>
-
-<a href="stories/Run Your Race.pdf" target="_blank">
-Read Story
-</a>
-
+<p>Stay focused on your purpose and avoid distractions that hinder progress.</p>
+<a href="stories/Run Your Race.pdf" target="_blank" class="btn">Read Story</a>
+</div>
 </div>
 
 <div class="card">
-
+<div class="card-top"></div>
+<div class="card-content">
 <h3>🦅 The Eagle and the Chicken</h3>
-
-<p>
-Discover your true identity and rise above limitations.
-</p>
-
-<a href="stories/eagle-and-chicken.pdf" target="_blank">
-Read Story
-</a>
-
+<p>Discover your true identity and rise above limitations.</p>
+<a href="stories/eagle-and-chicken.pdf" target="_blank" class="btn">Read Story</a>
+</div>
 </div>
 
 <div class="card">
-
+<div class="card-top"></div>
+<div class="card-content">
 <h3>🍌 The Monkey and the Bananas</h3>
-
-<p>
-A thought-provoking story about mindset, fear, tradition,
-and breaking unnecessary limitations.
-</p>
-
-<a href="stories/monkey-and-bananas.pdf" target="_blank">
-Read Story
-</a>
-
+<p>A thought-provoking story about mindset, fear, tradition, and breaking unnecessary limitations.</p>
+<a href="stories/monkey-and-bananas.pdf" target="_blank" class="btn">Read Story</a>
+</div>
 </div>
 
 <div class="card">
-
+<div class="card-top"></div>
+<div class="card-content">
 <h3>🔥 Dare to Be Different</h3>
-
-<p>
-Standing firm in your values and faith when everyone else follows the crowd.
-</p>
-
-<a href="stories/dare-to-be-different.pdf" target="_blank">
-Read Story
-</a>
-
+<p>Standing firm in your values and faith when everyone else follows the crowd.</p>
+<a href="stories/dare-to-be-different.pdf" target="_blank" class="btn">Read Story</a>
+</div>
 </div>
 
 <div class="card">
-
+<div class="card-top"></div>
+<div class="card-content">
 <h3>💧 From Shame to Evangelist</h3>
-
-<p>
-The inspiring transformation of the Samaritan woman who encountered Jesus.
-</p>
-
-<a href="stories/from-shame-to-evangelist.pdf" target="_blank">
-Read Story
-</a>
-
+<p>The inspiring transformation of the Samaritan woman who encountered Jesus.</p>
+<a href="stories/from-shame-to-evangelist.pdf" target="_blank" class="btn">Read Story</a>
+</div>
 </div>
 
 <div class="card">
-
+<div class="card-top"></div>
+<div class="card-content">
 <h3>🌟 Against the Odds</h3>
-
-<p>
-A story about determination, resilience, and believing God for the impossible.
-</p>
-
-<a href="stories/against-the-odds.pdf" target="_blank">
-Read Story
-</a>
-
+<p>A story about determination, resilience, and believing God for the impossible.</p>
+<a href="stories/against-the-odds.pdf" target="_blank" class="btn">Read Story</a>
+</div>
 </div>
 
 </div>
@@ -298,24 +360,24 @@ Read Story
 
 <h2>🎯 What Teens Will Learn</h2>
 
-<div class="cards">
+<div class="learning-grid">
 
-<div class="card">
+<div class="learning-box">
 <h3>🌟 Identity</h3>
 <p>Understanding who you are in Christ.</p>
 </div>
 
-<div class="card">
+<div class="learning-box">
 <h3>🎯 Purpose</h3>
 <p>Discovering God's plan and direction for your life.</p>
 </div>
 
-<div class="card">
+<div class="learning-box">
 <h3>💪 Courage</h3>
 <p>Standing strong in faith and convictions.</p>
 </div>
 
-<div class="card">
+<div class="learning-box">
 <h3>👑 Leadership</h3>
 <p>Developing influence, responsibility, and character.</p>
 </div>
@@ -325,6 +387,8 @@ Read Story
 </section>
 
 <section>
+
+<div class="scripture">
 
 <h2>📖 Scripture Inspiration</h2>
 

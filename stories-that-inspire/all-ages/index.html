@@ -2,142 +2,237 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Stories for All Ages | GracePath Network</title>
 
-<link rel="stylesheet" href="../../style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
     font-family:'Poppins',sans-serif;
-    background:#f5f7fb;
+    background:#f4f7fc;
     color:#333;
+    line-height:1.8;
 }
 
 /* Navigation */
 
 nav{
-    padding:20px;
+    background:#1e3a8a;
+    padding:18px 30px;
 }
 
 nav a{
+    color:#ffffff;
     text-decoration:none;
     font-weight:600;
-    color:#0b2d5c;
 }
 
-/* Header */
+nav a:hover{
+    color:#facc15;
+}
+
+/* Hero Section */
 
 header{
+    background:linear-gradient(135deg,#1e3a8a,#2563eb);
+    color:#ffffff;
     text-align:center;
-    padding:80px 20px;
+    padding:100px 20px;
 }
 
 header h1{
-    color:#0b2d5c;
-    margin-bottom:15px;
+    font-size:3.5rem;
+    margin-bottom:20px;
+    color:#facc15;
 }
 
 header p{
-    max-width:800px;
+    max-width:850px;
     margin:auto;
-    line-height:1.8;
+    font-size:1.15rem;
 }
 
-/* Sections */
+/* Main Sections */
 
 section{
-    max-width:1100px;
+    max-width:1200px;
     margin:auto;
-    padding:40px 20px;
+    padding:70px 20px;
 }
 
 section h2{
     text-align:center;
-    color:#0b2d5c;
-    margin-bottom:30px;
+    color:#1e3a8a;
+    margin-bottom:40px;
+    font-size:2rem;
 }
 
-/* Cards Grid */
+/* Featured Story */
+
+.featured-story{
+    background:#ffffff;
+    padding:40px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    border-top:6px solid #facc15;
+    max-width:850px;
+    margin:auto;
+}
+
+.featured-story h3{
+    color:#1e3a8a;
+    margin-bottom:15px;
+    font-size:1.8rem;
+}
+
+.featured-story p{
+    margin-bottom:25px;
+}
+
+/* Story Grid */
 
 .cards{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
+    gap:30px;
 }
-
-/* Cards */
 
 .card{
     background:#ffffff;
-    border:2px solid #0b2d5c;
     border-radius:20px;
-    padding:25px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.08);
-    transition:all 0.3s ease;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    transition:0.3s;
 }
 
 .card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+    transform:translateY(-8px);
+}
+
+.card-top{
+    height:8px;
+    background:#facc15;
+}
+
+.card-content{
+    padding:25px;
 }
 
 .card h3{
-    color:#0b2d5c;
+    color:#1e3a8a;
     margin-bottom:15px;
 }
 
 .card p{
-    line-height:1.7;
     margin-bottom:20px;
 }
 
 /* Buttons */
 
-.card a{
+.btn{
     display:inline-block;
-    background:#0b2d5c;
+    background:#1e3a8a;
     color:#ffffff;
     text-decoration:none;
-    padding:12px 24px;
+    padding:12px 25px;
     border-radius:30px;
-    border:2px solid #0b2d5c;
     font-weight:600;
-    transition:all 0.3s ease;
+    transition:0.3s;
 }
 
-.card a:hover{
-    background:#154a8a;
-    border-color:#154a8a;
+.btn:hover{
+    background:#facc15;
+    color:#1e3a8a;
+}
+
+/* Lessons */
+
+.lesson-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.lesson-box{
+    background:#ffffff;
+    padding:30px;
+    text-align:center;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.lesson-box h3{
+    color:#1e3a8a;
+    margin-bottom:10px;
+}
+
+/* Scripture */
+
+.scripture{
+    background:#1e3a8a;
     color:#ffffff;
+    text-align:center;
+    padding:60px 30px;
+    border-radius:25px;
 }
 
-/* Featured Story */
+.scripture h2{
+    color:#facc15;
+    margin-bottom:25px;
+}
 
-section:first-of-type .card{
-    max-width:800px;
+.scripture p{
+    max-width:850px;
     margin:auto;
+    font-size:1.1rem;
+}
+
+.scripture strong{
+    display:block;
+    margin-top:20px;
+    color:#facc15;
 }
 
 /* Footer */
 
 footer{
+    background:#111827;
+    color:#ffffff;
     text-align:center;
-    padding:40px 20px;
-    margin-top:40px;
-    background:#ffffff;
-    border-top:3px solid #0b2d5c;
+    padding:60px 20px;
+    margin-top:50px;
 }
 
 footer h3{
-    color:#0b2d5c;
+    color:#facc15;
+    margin-bottom:15px;
+    font-size:1.8rem;
 }
 
 footer p{
-    margin:8px 0;
+    margin:10px 0;
+}
+
+footer .tagline{
+    color:#d1d5db;
+    margin-bottom:20px;
+}
+
+footer .copyright{
+    margin-top:20px;
+    color:#9ca3af;
 }
 
 /* Mobile */
@@ -145,20 +240,21 @@ footer p{
 @media(max-width:768px){
 
     header{
-        padding:50px 20px;
+        padding:70px 20px;
     }
 
     header h1{
-        font-size:2rem;
+        font-size:2.4rem;
     }
 
     section{
-        padding:30px 15px;
+        padding:50px 15px;
     }
 
 }
 
 </style>
+
 </head>
 
 <body>
@@ -168,18 +264,20 @@ footer p{
 </nav>
 
 <header>
+
 <h1>🌍 Stories for All Ages</h1>
 
 <p>
 Faith-filled stories designed to inspire, encourage, and transform lives through biblical values, perseverance, character, purpose, and God's grace.
 </p>
+
 </header>
 
 <section>
 
 <h2>⭐ Featured Story</h2>
 
-<div class="card">
+<div class="featured-story">
 
 <h3>🏺 The Preacher's Daughter</h3>
 
@@ -187,7 +285,7 @@ Faith-filled stories designed to inspire, encourage, and transform lives through
 A touching story of faith, forgiveness, restoration, and discovering God's purpose through life's challenges.
 </p>
 
-<a href="../Stories/THE PREACHERS DAUGHTER.pdf" target="_blank">
+<a href="../Stories/THE PREACHERS DAUGHTER.pdf" target="_blank" class="btn">
 Read Featured Story
 </a>
 
@@ -202,39 +300,57 @@ Read Featured Story
 <div class="cards">
 
 <div class="card">
+<div class="card-top"></div>
+<div class="card-content">
 <h3>🔥 Chosen For Greatness</h3>
 <p>Discovering God's purpose and walking in divine destiny.</p>
-<a href="../Stories/CHOSEN FOR GREATNESS.pdf" target="_blank">Read Story</a>
+<a href="../Stories/CHOSEN FOR GREATNESS.pdf" target="_blank" class="btn">Read Story</a>
+</div>
 </div>
 
 <div class="card">
-<h3>🌊 Grace Beyond</h3>
+<div class="card-top"></div>
+<div class="card-content">
+<h3>🌊 Grace Beyond The Storm</h3>
 <p>Finding hope, purpose, and victory through life's storms.</p>
-<a href="../Stories/GRACE BEYOND THE STORM.pdf" target="_blank">Read Story</a>
+<a href="../Stories/GRACE BEYOND THE STORM.pdf" target="_blank" class="btn">Read Story</a>
+</div>
 </div>
 
 <div class="card">
+<div class="card-top"></div>
+<div class="card-content">
 <h3>🏺 The Preacher's Daughter</h3>
 <p>A powerful journey of faith, restoration, and grace.</p>
-<a href="../Stories/THE PREACHERS DAUGHTER.pdf" target="_blank">Read Story</a>
+<a href="../Stories/THE PREACHERS DAUGHTER.pdf" target="_blank" class="btn">Read Story</a>
+</div>
 </div>
 
 <div class="card">
+<div class="card-top"></div>
+<div class="card-content">
 <h3>🎯 Purpose Unlocked</h3>
 <p>Discovering and fulfilling your God-given calling.</p>
-<a href="../Stories/PURPOSE UNLOCKED.pdf" target="_blank">Read Story</a>
+<a href="../Stories/PURPOSE UNLOCKED.pdf" target="_blank" class="btn">Read Story</a>
+</div>
 </div>
 
 <div class="card">
+<div class="card-top"></div>
+<div class="card-content">
 <h3>🏆 Building A Legacy</h3>
 <p>Making choices today that impact generations tomorrow.</p>
-<a href="../Stories/BUILDING A LEGACY.pdf" target="_blank">Read Story</a>
+<a href="../Stories/BUILDING A LEGACY.pdf" target="_blank" class="btn">Read Story</a>
+</div>
 </div>
 
 <div class="card">
+<div class="card-top"></div>
+<div class="card-content">
 <h3>👑 The Leader Within</h3>
 <p>Growing in leadership through character and service.</p>
-<a href="../Stories/THE LEADER WITHIN.pdf" target="_blank">Read Story</a>
+<a href="../Stories/THE LEADER WITHIN.pdf" target="_blank" class="btn">Read Story</a>
+</div>
 </div>
 
 </div>
@@ -245,24 +361,24 @@ Read Featured Story
 
 <h2>💡 Key Lessons</h2>
 
-<div class="cards">
+<div class="lesson-grid">
 
-<div class="card">
+<div class="lesson-box">
 <h3>🙏 Faith</h3>
-<p>Trusting God in every season.</p>
+<p>Trusting God in every season of life.</p>
 </div>
 
-<div class="card">
+<div class="lesson-box">
 <h3>💪 Perseverance</h3>
 <p>Overcoming challenges with courage.</p>
 </div>
 
-<div class="card">
+<div class="lesson-box">
 <h3>❤️ Character</h3>
 <p>Building integrity and godly values.</p>
 </div>
 
-<div class="card">
+<div class="lesson-box">
 <h3>🎯 Purpose</h3>
 <p>Living according to God's plan.</p>
 </div>
@@ -273,13 +389,18 @@ Read Featured Story
 
 <section>
 
+<div class="scripture">
+
 <h2>📖 Scripture Inspiration</h2>
 
 <p>
-"Whatever is true, whatever is noble, whatever is right, whatever is pure, whatever is lovely, whatever is admirable—if anything is excellent or praiseworthy—think about such things."
+"Whatever is true, whatever is noble, whatever is right, whatever is pure,
+whatever is lovely, whatever is admirable—if anything is excellent or praiseworthy—think about such things."
 </p>
 
-<p><strong>Philippians 4:8</strong></p>
+<strong>Philippians 4:8</strong>
+
+</div>
 
 </section>
 
@@ -287,13 +408,17 @@ Read Featured Story
 
 <h3>GracePath Network</h3>
 
-<p><em>Transforming Lives Through Christ</em></p>
+<p class="tagline">
+Transforming Lives Through Christ
+</p>
 
 <p>📧 gracepathnetwork@gmail.com</p>
 
 <p>📞 +254 721 335 631</p>
 
-<p>&copy; 2026 GracePath Network. All Rights Reserved.</p>
+<p class="copyright">
+© 2026 GracePath Network. All Rights Reserved.
+</p>
 
 </footer>
 
